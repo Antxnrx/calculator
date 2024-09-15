@@ -25,6 +25,7 @@ button{
     font-size: 30px;
     font-weight:400;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover{
@@ -36,13 +37,17 @@ button:active{
 }
 
 #display{
-    width: 100%;
+    width: 90%;
     min-height: 100px;
-    padding:20px;
-    font-size: 20px;
+    margin:20px;
+    font-size: 100px;
     border:none;
-    background-color:#D9D9D9 ;
+    background-color:#7D7B7B;
     overflow: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color:white;
+    border:none;
 }
 
 #keys{
