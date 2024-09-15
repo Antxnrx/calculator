@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://th.bing.com/th/id/R.399191e74501a32201114ac4bb60389f?rik=TPPrXMg1TJF07Q&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fiynque%2fios7-style%2f512%2fCalculator-icon.png&ehk=cemRDbFjw9QZcHJ9zU9Aj4uL46kbYanfp0QU8iYkCJo%3d&risl=&pid=ImgRaw&r=0" type="image/png">
     <title>Calculator</title>
 </head>
 <body>
     <div id="calculator">
         <input id="display" readonly><br>
         <div id="keys">
-            <button onclick="append('+')">+</button>
             <button onclick="append('7')">7</button>
             <button onclick="append('8')">8</button>
             <button onclick="append('9')">9</button>
-            <button onclick="append('*')">x</button>
+            <button onclick="append('+')" class="op-btn">+</button>
             <button onclick="append('4')">4</button>
             <button onclick="append('5')">5</button>
             <button onclick="append('6')">6</button>
-            <button onclick="append('/')">/</button>
+            <button onclick="append('*')" class="op-btn">x</button>
             <button onclick="append('1')">1</button>
             <button onclick="append('2')">2</button>
             <button onclick="append('3')">3</button>
+            <button onclick="append('/')" class="op-btn">/</button>
             <button onclick="append('0')">0</button>
             <button onclick="append('.')">.</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="cleardisplay()">AC</button>
+            <button onclick="cleardisplay()" class="op-btn">AC</button>
+            <button onclick="calculate()" class="op-btn">=</button>
+            
         </div>
     </div>
 </body>

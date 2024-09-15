@@ -4,16 +4,15 @@ body{
     align-items: center;
     height: 100vh;
     background-color:hwb(0 15% 82% / 0.541);
-
 }
-
 
 
 #calculator{
     background-color:#D9D9D9 ;
     border-radius: 30px;
-    max-width: 500px;;
+    max-width: 500px;
     overflow: hidden;
+    flex-direction: column;
 }
 
 button{
@@ -21,19 +20,29 @@ button{
     height: 100px;
     border-radius: 50px;
     border:none;
-    background-color:hwb(0 15% 82%);
+    background-color:hwb(40 15% 81%);
     color:white;
     font-size: 30px;
     font-weight:400;
     cursor: pointer;
 }
+
+button:hover{
+    background-color:hwb(42 15% 81% / 0.685);
+}
+
+button:active{
+    background-color:hwb(42 15% 81% / 30%);
+}
+
 #display{
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     padding:20px;
     font-size: 20px;
     border:none;
     background-color:#D9D9D9 ;
+    overflow: auto;
 }
 
 #keys{
@@ -43,3 +52,14 @@ button{
     padding:25px;
 }
 
+.op-btn{
+    background-color:hwb(39 0% 0%);
+}
+
+.op-btn:hover{
+    background-color:hwb(39 0% 0% / 0.685);
+}
+
+.op-btn:active{
+    background-color:hwb(39 0% 0% / 0.397);
+}
